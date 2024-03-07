@@ -1,4 +1,4 @@
-package functionAndVariable
+package a_basic.functionAndVariable
 
 fun main(args: Array<String>) {
     // 자바에서는 변수를 선언할 때 타입이 맨 앞에 오지만, 코틀린에서는 타입 지정을 생략하는 경우가 흔하다.

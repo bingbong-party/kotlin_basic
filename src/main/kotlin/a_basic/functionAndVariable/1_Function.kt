@@ -1,4 +1,4 @@
-package functionAndVariable
+package a_basic.functionAndVariable
 
 fun max(a: Int, b: Int): Int {
     return if (a > b) a else b
