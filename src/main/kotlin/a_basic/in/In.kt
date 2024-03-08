@@ -2,6 +2,14 @@ package a_basic.`in`
 
 fun main(args: Array<String>) {
     println(recognize('4'))
+
+    val price: Int = 100
+
+    if (price in arrayOf(100, 200, 300)) {
+        println("contain")
+    } else {
+        println("not contain")
+    }
 }
 
 fun recognize(c: Char) =

@@ -15,3 +15,4 @@ fun eval2 (value: Int): Int =
         is Int -> value
         else -> throw IllegalArgumentException("Unknown expression")
     }
+

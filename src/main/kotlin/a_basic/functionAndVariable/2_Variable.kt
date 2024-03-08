@@ -21,5 +21,36 @@ fun main(args: Array<String>) {
     println("now message : $message")
     val testData = "now message : $message"
     println(testData)
+
+    // Int 와 Int?
+    // 코틀린의 Int 는 null을 허용하지 않음. null을 허용하려면 타입에 ?를 붙여서 선언해야 함
+    var i: Int = 10
+    var k: Int? = 10
+
+//    i = null => 에러 발생
+    k = null
+
+    // String 과 String?
+    // Int 와 마찬가지로, ? 를 붙여 선언해야 null을 허용함
+    var a: String
+    var b: String?
+
+//    a = null => 에러 발생
+    b = null
+
+    // 타입 추론 : 코틀린은 타입 추론으로 변수에 들어오는 값을 보고 타입을 알아서 지정해준다.
+    val string = "ABC"
+    val integer = 1
+    val long = 1L
+    val double = 1.0
+    val float = 1.0F
+    val char = 'A'
+
+    println("string = " + string::class)
+    println("integer = " + integer::class)
+    println("long = " + long::class)
+    println("double = " + double::class)
+    println("float = " + float::class)
+    println("char = " + char::class)
 }
 
